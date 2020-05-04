@@ -9,6 +9,7 @@ import { DataService } from '../services/data-service/data.service';
 })
 export class UsersListComponent implements OnInit {
   users = [];
+  id = "5eaecda0cba960e77fc9f205";
 
   constructor(private dataService: DataService) { }
 
@@ -23,7 +24,18 @@ export class UsersListComponent implements OnInit {
           console.log(error);
 
         }
-      )
+      );
+
+    this.dataService.fetchUserById(this.id)
+      .subscribe(
+        (res) => {
+          console.log(res);
+        },
+        (error) => {
+          console.log(error);
+
+        }
+      );
   }
 
 }
