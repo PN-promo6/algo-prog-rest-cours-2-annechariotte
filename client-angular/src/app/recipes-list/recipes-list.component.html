@@ -1,0 +1,12 @@
+<section class="container">
+  <div class="row my-5 mx-1">
+    <!-- <h1>Recipes List</h1> -->
+  </div>
+
+  <div class="row">
+
+    <app-recipe-preview class="col-6 mb-5" *ngFor="let recipe of recipes" [recipe]="recipe">
+    </app-recipe-preview>
+
+  </div>
+</section>

@@ -1,0 +1,52 @@
+<article class="card rounded-0 border-0 shadow-sm">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-4">
+        <img src={{recipe.picture}} alt="recipe photo">
+      </div>
+      <div class="col-8" style="font-size: 12px;">
+        <p class="card-title h5 ">{{ recipe.name }}</p>
+        <div class="row">
+          <div class="col-4">
+            <p class="badge badge-dark" style="font-size: 14px;">{{ recipe.category }}</p>
+          </div>
+          <div class="col-8">
+            <p class="card-text" style="font-size: 14px;">By : {{ recipe.userName }} </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="row">
+              <div class="col-4">⏲️</div>
+              <div class="col-8 pl-0">
+                <p style="margin-bottom: 0px;">Prep {{ recipe.preparationTime }}'</p>
+                <p>Cook {{ recipe.cookingTime }}'</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-4">🧑‍🍳</div>
+              <div class="col-8 pl-0">
+                <p>{{ recipe.level }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-4">🍴</div>
+              <div class="col-8 pl-0">
+                <p>{{ recipe.serving }} pers</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <p><a>➕ View details</a></p>
+      </div>
+    </div>
+
+
+  </div>
+</article>
